@@ -1,0 +1,199 @@
+/* Start About Us Area css
+============================================================================================ */
+.about_area {
+	position: relative;
+	.main_title {
+		margin-bottom: 0px;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	.primary_btn {
+		margin-top: 20px;
+	}
+	.about_img {
+		position: relative;
+		right: 250px;
+		@media (max-width: 1480px) {
+			right: 0;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+/* End About Us Area css
+============================================================================================ */
+
+/* Start Portfolio Area css
+============================================================================================ */
+.portfolio_area {
+	padding-bottom: 120px;
+	@media (max-width: 991px) {
+		padding-bottom: 50px;
+	}
+	.filters {
+		ul {
+			padding-left: 0;
+			margin-bottom: 50px;
+			@media (max-width: 991px) {
+				margin-bottom: 20px;
+			}
+			li {
+				display: inline-block;
+				margin-right: 50px;
+				font-size: 14px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #222222;
+				cursor: pointer;
+				@include transition();
+				&:hover,
+				&.active {
+					color: $primary-color2;
+				}
+				@media (max-width: 767px) {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+.portfolio_box {
+	margin-bottom: 80px;
+	@media (max-width: 767px) {
+		margin-bottom: 35px;
+	}
+	.short_info {
+		margin-top: 30px;
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
+		h4 {
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-bottom: 0px;
+			a {
+				color: $title-color;
+			}
+		}
+	}
+}
+.single_portfolio {
+	position: relative;
+	.overlay {
+		@include transition();
+	}
+	.icon {
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		@include transform(translate(-50%, -50%));
+		opacity: 0;
+		visibility: hidden;
+		@include transition();
+		span {
+			font-size: 100px;
+			display: inline-block;
+			@include transform(rotate(135deg));
+			color: #ffffff;
+			cursor: pointer;
+		}
+	}
+	&:hover {
+		.overlay {
+			background: rgba(77, 87, 222, 0.5);
+		}
+		.icon {
+			opacity: 1;
+			visibility: visible;
+			top: 50%;
+			left: 50%;
+		}
+	}
+}
+
+
+
+.portfolio_details_inner {
+	.row {
+		margin-bottom: 65px;
+		@media (max-width: 480px) {
+			margin-bottom: 30px;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 14px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	.portfolio_right_text {
+		margin-top: 50px;
+		h4 {
+			font-size: 20px;
+			margin-bottom: 18px;
+		}
+		p {
+			margin-bottom: 25px;
+			font-size: 14px;
+		}
+		.list {
+			li {
+				margin-bottom: 7px;
+				span {
+					font-family: $title-font;
+					color: #000000;
+					font-size: 16px;
+					font-weight: 500;
+					width: 97px;
+					display: inline-block;
+				}
+				font-weight: normal;
+				font-size: 14px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
+				i {
+					color: #f1cd09;
+				}
+			}
+		}
+	}
+}
+/* End Portfolio Area css
+============================================================================================ */
+
+/* Start Contact Area css
+============================================================================================ */
+.contact_area {
+	color: #ffffff;
+}
+
+.subscription_box {
+	background: url(../img/contact-banner.png) no-repeat center;
+	padding: 150px 0px;
+	@media (max-width: 767px) {
+		padding: 50px 20px;
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 20px;
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+	
+	
+}
+
+/* End Contact Area css
+============================================================================================ */
